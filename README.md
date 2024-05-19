@@ -18,8 +18,9 @@ import java.util.concurrent.ThreadLocalRandom;
 import java.util.Random;
 
 ## Estrutura do Código
+## Estrutura do Código
 
-### Classe `ProcessoSeletivo`
+### Classe `gerenciadorProcessoSeletivo`
 
 #### Métodos
 
@@ -52,6 +53,12 @@ import java.util.Random;
 - `static double valorPretendido()`
   - Gera um valor aleatório para o salário pretendido pelo candidato.
   - **Retorno**: `double` - Valor do salário pretendido.
+
+- `static void analisarCandidato(double salarioPretendido)`
+  - Analisa se o salário pretendido pelo candidato está dentro do valor base estipulado.
+  - **Parâmetros**: `salarioPretendido` - Salário pretendido pelo candidato.
+  - **Lógica**:
+    - Compara o salário pretendido com o salário base e imprime a decisão de ligar, fazer uma contra proposta, ou aguardar.
 
 - `static void analisarCandidato(double salarioPretendido)`
   - Analisa se o salário pretendido pelo candidato está dentro do valor base estipulado.
